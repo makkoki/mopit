@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="fi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Puhdistusaineliuoksen maksimimäärät</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main>
+    <h1>Suositellut puhdistusaineliuoksen maksimimäärät eri siivousmenetelmissä</h1>
+    <div class="table-wrap">
+      <table>
+        <colgroup>
+          <col class="product-column">
+          <col class="size-column">
+          <col class="single-column"><col class="selector-column">
+          <col class="single-column"><col class="selector-column">
+          <col class="single-column"><col class="selector-column">
+        </colgroup>
+        <thead>
+          <tr>
+            <th class="product-heading">Moppi</th>
+            <th>Koko</th>
+            <th colspan="2">Nihkeäpyyhintä</th>
+            <th colspan="2">Kosteapyyhintä</th>
+            <th colspan="2">Märkäpyyhintä</th>
+          </tr>
+          <tr>
+            <th aria-hidden="true"></th>
+            <th>leveys</th>
+            <th>1 kpl</th>
+            <th><label class="sr-only" for="damp-count">Moppien määrä nihkeäpyyhinnässä</label><select id="damp-count" class="mop-count" aria-label="Moppien määrä nihkeäpyyhinnässä"></select></th>
+            <th>1 kpl</th>
+            <th><label class="sr-only" for="moist-count">Moppien määrä kosteapyyhinnässä</label><select id="moist-count" class="mop-count" aria-label="Moppien määrä kosteapyyhinnässä"></select></th>
+            <th>1 kpl</th>
+            <th><label class="sr-only" for="wet-count">Moppien määrä märkäpyyhinnässä</label><select id="wet-count" class="mop-count" aria-label="Moppien määrä märkäpyyhinnässä"></select></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th class="product"><span>Swep Single HygienePlus</span><span class="mop hygiene" aria-hidden="true"></span></th>
+            <td>50 cm</td><td>0,5 dl</td><td data-calculated></td><td>1dl</td><td data-calculated></td><td></td><td data-calculated></td>
+          </tr>
+          <tr>
+            <th class="product" rowspan="3"><span>Swep Single MicroTech</span><span class="eco">✓</span><span class="mop shag" aria-hidden="true"></span></th>
+            <td>35 cm</td><td>0,5 dl</td><td data-calculated></td><td>1 dl</td><td data-calculated></td><td>2,5 dl</td><td data-calculated></td>
+          </tr>
+          <tr><td>50 cm</td><td>1 dl</td><td data-calculated></td><td>2,5 dl</td><td data-calculated></td><td>4 dl</td><td data-calculated></td></tr>
+          <tr><td>75 cm</td><td>1,5 dl</td><td data-calculated></td><td>3,5 dl</td><td data-calculated></td><td></td><td data-calculated></td></tr>
+          <tr>
+            <th class="product" rowspan="2"><span>Swep Single MicroPlus</span><span class="eco">✓</span><span class="mop flat" aria-hidden="true"></span></th>
+            <td>35 cm</td><td>0,25dl</td><td data-calculated></td><td>0,5</td><td data-calculated>5 dl</td><td></td><td data-calculated></td>
+          </tr>
+          <tr><td>50 cm</td><td>0,5 dl</td><td data-calculated></td><td>1 dl</td><td data-calculated></td><td></td><td data-calculated></td></tr>
+          <tr>
+            <th class="product" rowspan="2"><span>Swep Single MicroCombi</span><span class="eco">✓</span><span class="mop combi" aria-hidden="true"></span></th>
+            <td>50 cm</td><td>1 dl</td><td data-calculated></td><td>1,5 dl</td><td data-calculated></td><td></td><td data-calculated></td>
+          </tr>
+          <tr><td>120 cm</td><td>2 dl</td><td data-calculated></td><td></td><td data-calculated></td><td></td><td data-calculated></td></tr>
+          <tr>
+            <th class="product"><span>Swep Single Taso &amp;<br>kalustemoppi</span><span class="mop blue" aria-hidden="true"></span></th>
+            <td>35 cm</td><td>0,25 dl</td><td data-calculated></td><td>0,5 dl</td><td data-calculated></td><td>-</td><td data-calculated>-</td>
+          </tr>
+          <tr>
+            <th class="product"><span>Swep Single Finnmoppi</span><span class="mop shag light" aria-hidden="true"></span></th>
+            <td>50 cm</td><td>1 dl</td><td data-calculated></td><td>2,5 dl</td><td data-calculated></td><td>4 dl</td><td data-calculated></td>
+          </tr>
+          <tr>
+            <th class="product"><span>Swep Single Extramoppi</span><span class="mop shag extra" aria-hidden="true"></span></th>
+            <td>50 cm</td><td>1 dl</td><td data-calculated></td><td>2,5 dl</td><td data-calculated></td><td>4 dl</td><td data-calculated></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </main>
+  <script type="module" src="script.js"></script>
+</body>
+</html>
