@@ -36,9 +36,17 @@ tbody td { height: 38px; padding: 7px; text-align: center; }
 .mop-count:focus { outline: 3px solid #fff; outline-offset: 1px; }
 .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; }
 @media (max-width: 700px) {
-  body { padding: 0; }
+  body { padding: 0; overflow: hidden; }
   main { width: 100%; max-width: none; }
-  h1 { margin: 0; padding: 12px 10px 6px; font-size: 26px; }
-  .table-description { padding: 0 10px; font-size: 20px; }
-  .table-wrap { width: 100vw; }
+  h1, .table-description { display: none; }
+  .table-wrap {
+    position: fixed;
+    inset: 0;
+    width: 100%;
+    height: 100vh;
+    height: 100dvh;
+    overflow: auto;
+    overscroll-behavior: contain;
+    -webkit-overflow-scrolling: touch;
+  }
 }
