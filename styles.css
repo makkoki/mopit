@@ -5,10 +5,16 @@ main { max-width: 1117px; }
 h1 { margin: 0 0 8px; color: #df0026; font-size: 32px; font-weight: 700; }
 .table-description { margin: 0 0 18px; font-size: 24px; }
 .table-wrap { overflow-x: auto; }
-table { width: 100%; min-width: 1080px; border-collapse: collapse; table-layout: fixed; font-size: 20px; }
-.product-column { width: 260px; }
-.size-column { width: 100px; }
-.amount-column { width: 120px; }
+table { width: 100%; min-width: 1160px; border-collapse: collapse; table-layout: fixed; font-size: 20px; }
+th, td { border: 2px solid white; }
+thead th { height: 38px; padding: 5px 7px; color: white; background: #df0026; font-weight: 700; text-align: center; }
+thead .product-heading { text-align: left; }
+.product-column { width: 300px; }
+.size-column { width: 110px; }
+.single-column { width: 115px; }
+.selector-column { width: 135px; }
+thead tr:first-child th[colspan] { white-space: nowrap; }
+table { width: 100%; min-width: 920px; border-collapse: collapse; table-layout: fixed; font-size: 20px; }
 th, td { border: 2px solid white; }
 thead th { height: 38px; padding: 5px 7px; color: white; background: #df0026; font-weight: 700; text-align: center; }
 thead .product-heading { text-align: left; }
@@ -26,7 +32,8 @@ tbody td { height: 38px; padding: 7px; text-align: center; }
 .mop.light { background: repeating-linear-gradient(170deg,#eee 0 3px,#bbb 4px 6px); }
 .mop.extra { width: 50%; background: repeating-linear-gradient(170deg,#ddd 0 3px,#aaa 4px 6px); }
 .eco { position: absolute; z-index: 3; top: 0; right: 7px; width: 34px; height: 38px; padding-top: 7px; border: 2px solid white; color: #159b78; background: repeating-linear-gradient(120deg,#dff5ec 0 3px,#79cdb6 4px 6px); border-radius: 50%; text-align: center; font-weight: 700; }
-.mop-count { width: 100px; max-width: 100%; height: 34px; padding: 2px 24px 2px 8px; border: 1px solid #aaa; border-radius: 3px; background: white; color: #111; font: inherit; font-size: 18px; text-align: center; cursor: pointer; }
+.mop-count { width: 105px; max-width: 100%; height: 32px; padding: 1px 28px 1px 8px; border: 1px solid #aaa; border-radius: 3px; background: white; color: #111; font: inherit; font-size: 18px; text-align: center; cursor: pointer; }
+.mop-count { width: 76px; max-width: 100%; height: 30px; border: 1px solid #aaa; border-radius: 3px; background: white; color: #111; font: inherit; font-size: 18px; text-align: center; cursor: pointer; }
 .mop-count:focus { outline: 3px solid #fff; outline-offset: 1px; }
 .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; }
 @media (max-width: 700px) {
