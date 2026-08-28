@@ -29,6 +29,7 @@ if (typeof document !== 'undefined') {
   document.querySelectorAll('.mop-count').forEach((select) => {
     for (let count = 1; count <= 10; count += 1) {
       select.add(new Option(formatOptionLabel(count), count, count === 10, count === 10));
+      select.add(new Option(count, count, count === 10, count === 10));
     }
     select.addEventListener('change', () => updateColumn(select));
     updateColumn(select);

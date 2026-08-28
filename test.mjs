@@ -1,5 +1,6 @@
 import assert from 'node:assert/strict';
 import { calculateAmount, formatOptionLabel } from './script.js';
+import { calculateAmount } from './script.js';
 
 assert.equal(calculateAmount('0,25 dl', 3), '0,75 dl');
 assert.equal(calculateAmount('2,5dl', 10), '25 dl');
