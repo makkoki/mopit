@@ -6,6 +6,10 @@ export function calculateAmount(source, count) {
   return `${Number(amount.toFixed(10)).toString().replace('.', ',')} dl`;
 }
 
+export function formatCountOption(count) {
+  return `${count} kpl`;
+}
+
 export function updateColumn(select) {
   const selects = [...document.querySelectorAll('.mop-count')];
   const methodIndex = selects.indexOf(select);
@@ -24,7 +28,7 @@ export function updateColumn(select) {
 if (typeof document !== 'undefined') {
   document.querySelectorAll('.mop-count').forEach((select) => {
     for (let count = 1; count <= 10; count += 1) {
-      select.add(new Option(count, count, count === 10, count === 10));
+      select.add(new Option(formatCountOption(count), count, count === 10, count === 10));
     }
     select.addEventListener('change', () => updateColumn(select));
     updateColumn(select);
