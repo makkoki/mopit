@@ -33,7 +33,6 @@ tbody td { height: 38px; padding: 7px; text-align: center; }
 .mop.extra { width: 50%; background: repeating-linear-gradient(170deg,#ddd 0 3px,#aaa 4px 6px); }
 .eco { position: absolute; z-index: 3; top: 0; right: 7px; width: 34px; height: 38px; padding-top: 7px; border: 2px solid white; color: #159b78; background: repeating-linear-gradient(120deg,#dff5ec 0 3px,#79cdb6 4px 6px); border-radius: 50%; text-align: center; font-weight: 700; }
 .mop-count { width: 105px; max-width: 100%; height: 32px; padding: 1px 28px 1px 8px; border: 1px solid #aaa; border-radius: 3px; background: white; color: #111; font: inherit; font-size: 18px; text-align: center; cursor: pointer; }
-.mop-count { width: 76px; max-width: 100%; height: 30px; border: 1px solid #aaa; border-radius: 3px; background: white; color: #111; font: inherit; font-size: 18px; text-align: center; cursor: pointer; }
 .mop-count:focus { outline: 3px solid #fff; outline-offset: 1px; }
 .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; }
 @media (max-width: 700px) {
